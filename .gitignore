@@ -1,3 +1,7 @@
 /target
 **/*.rs.bk
 Cargo.lock
+*.so
+__pycache__/
+build/
+dist/

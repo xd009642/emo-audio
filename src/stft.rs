@@ -146,12 +146,12 @@ impl StftBuilder {
 /// Building using the StftBuilder
 #[derive(Copy, Clone, Debug, PartialEq, Eq, Hash)]
 pub struct ShortTimeFourierTransform {
-    n_fft: usize,
-    hop_length: usize,
-    win_length: usize,
-    win_alg: WindowingAlgorithm,
-    centred: bool,
-    pad_mode: PadMode,
+    pub(crate) n_fft: usize,
+    pub(crate) hop_length: usize,
+    pub(crate) win_length: usize,
+    pub(crate) win_alg: WindowingAlgorithm,
+    pub(crate) centred: bool,
+    pub(crate) pad_mode: PadMode,
 }
 
 impl Default for ShortTimeFourierTransform {

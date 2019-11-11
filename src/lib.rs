@@ -7,6 +7,9 @@ use std::f32::{consts::PI, NAN};
 /// Module containing an implementation of a short time fourier transform
 pub mod stft;
 
+#[cfg(feature = "python")]
+pub mod bindings;
+
 /// Get the different frequency components from a type containing frequency data
 pub trait FrequencyComponents {
     /// Gets the magnitude data as a 2D plot
