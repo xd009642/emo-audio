@@ -1,6 +1,8 @@
 //! Emo-audio is designed to contain a set of audio processing routines built
 //! around ndarray.
 
+/// Functions to compute Mel scale frequency banks and related functions
+pub mod mel;
 /// Metrics that can be gathered from the time or frequency domains
 pub mod metrics;
 /// Preemphasis extension trait for 1D arrays
@@ -12,6 +14,7 @@ pub mod stft;
 
 /// Common imports
 pub mod prelude {
+    pub use crate::mel::*;
     pub use crate::metrics::*;
     pub use crate::preemphasis::*;
     pub use crate::spectrum::*;
